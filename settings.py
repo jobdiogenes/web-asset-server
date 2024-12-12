@@ -10,7 +10,7 @@ DEBUG = False
 # Set KEY to None to disable security. This is NOT recommended since doing so
 # will allow anyone on the internet to use the attachment server to store
 # arbitrary files.
-KEY = os.environ['ATTACHMENT_KEY']
+KEY = os.environ['ASSET_SERVER_KEY']
 
 # Auth token timestamp must be within this many seconds of server time
 # in order to be considered valid. This prevents replay attacks.
@@ -28,8 +28,8 @@ ALLOW_STATIC_FILE_ACCESS = True
 
 # These values are interpolated into the web_asset_store.xml resource
 # so the client knows how to talk to the server.
-HOST = os.getenv('SERVER_HOST','localhost')
-PORT = os.getenv('SERVER_PORT','8080')
+HOST = os.getenv('ASSET_SERVER_HOST','localhost')
+PORT = os.getenv('ASSET_SERVER_PORT','8080')
 
 SERVER_NAME = HOST
 SERVER_PORT = PORT
