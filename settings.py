@@ -32,7 +32,7 @@ HOST = os.getenv('ASSET_SERVER_HOST','localhost')
 PORT = os.getenv('ASSET_SERVER_PORT','8080')
 
 SERVER_NAME = HOST
-SERVER_PORT = PORT
+SERVER_PORT = int(PORT)  # Must be Numeric
 
 # Port the development test server should listen on.
 DEVELOPMENT_PORT = PORT
