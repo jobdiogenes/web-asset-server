@@ -28,7 +28,7 @@ ALLOW_STATIC_FILE_ACCESS = True
 
 # These values are interpolated into the web_asset_store.xml resource
 # so the client knows how to talk to the server.
-HOST = os.getenv('ASSET_SERVER_HOST','localhost')
+HOST = os.environ['ASSET_SERVER_IP']
 PORT = os.getenv('ASSET_SERVER_PORT','8080')
 
 SERVER_NAME = HOST
